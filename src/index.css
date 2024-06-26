@@ -98,20 +98,20 @@ ul li a {
 
 /* for lg device */
 @media only screen and (max-width: 1200px){
-  ul {
-    padding: 0 2rem;
-  }
-  ul li{
-    border-bottom: 1px solid rgb(79, 79, 79);
-  
-  }
-  ul li a{
-    color: var(--black-color);
-  
-  }
+.mobile-menu ul {
+        padding: 0 2rem;
+      }
+      ul li{
+        border-bottom: 1px solid rgb(79, 79, 79);
+      
+      }
+      ul li a{
+        color: var(--black-color);
+      
+      }
 
 
-  header .primary-btn{
+  .mobile-menu .primary-btn{
     border: 1px solid var(--main-color);
     width: 80%;
     border-radius: 5px;
@@ -121,7 +121,7 @@ ul li a {
     outline: none !important;
   }
   
-  header .secondary-btn{
+  .mobile-menu .secondary-btn{
     border-radius: 10px;
     width: 80%;
     border: none;
