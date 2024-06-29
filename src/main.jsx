@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 import './index.css'
 import Header from '../src/components/Header.jsx'
-import Home from './pages/Home.jsx'
+import Home from './pages/Home page/Home.jsx'
 
 
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../assets/logo.svg';
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -7,22 +7,38 @@ import { FaXmark } from "react-icons/fa6";
 
   
 function Header() {
-
+    const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOPen, setIsMenuOpen] = useState(false)
 
+    // for togleer
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOPen)
         console.log(isMenuOPen)  
       }
 
+    //   for scrolling
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 100);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+     
+    
 
     return (
 
         <>
-        <header className="container-fluid primary-bg py-2 d-flex align-items-center">
+        <header className={`container-fluid ${isScrolled?"white-bg":"primary-bg"} py-2 d-flex align-items-center`}>
         <div className='d-xl-none d-lg-block' >
-                                 <img src={logo} alt="" />
-                    </div>
+                    <img src={logo} alt="" />
+            </div>
         <div className='container d-flex'>
                    
                 {/* navbar */}
@@ -30,18 +46,18 @@ function Header() {
                         <div >
                             <img src={logo} alt="" />
                         </div>
-                    <ul className="d-flex align-items-center gap-3 ">
+                    <ul className="d-flex align-items-center gap-5 ">
                         <li className="">
-                            <a className =" white-text " href="#" >Product</a>
+                            <a className ={`${isScrolled?"black-text":"white-text"}`} href="#" >Product</a>
                         </li>
                         <li>
-                            <a className =" white-text " href="#" >Pricing</a>
+                            <a className ={`${isScrolled?"black-text":"white-text"}`} href="#" >Pricing</a>
                         </li>
                         <li>
-                            <a className =" white-text " href="#" >Customers</a>
+                            <a className ={`${isScrolled?"black-text":"white-text"}`} href="#" >Customers</a>
                         </li>
                         <li>
-                            <a className =" white-text "  href="#" >Resources</a>
+                            <a className ={`${isScrolled?"black-text":"white-text"}`}  href="#" >Resources</a>
                         </li>
                     </ul>
                 </nav>
@@ -49,9 +65,9 @@ function Header() {
                 {/* left side login buttons */}
 
                 <div className='align-items-center gap-3 d-xl-flex  d-none '>
-                    <h6>login</h6>
-                    <button className='primary-btn'>Request a demo</button>
-                    <button className=' secondary-btn'>Start a free trial </button>
+                    <a className ={`login ${isScrolled?"black-text":"white-text"}`}>login</a>
+                    <button className={`${isScrolled?"primary-btn-1-scroll":"primary-btn-1"}`}>Request a demo</button>
+                    <button className={`${isScrolled?"secondary-btn-1-scroll":"secondary-btn-1"}`}>Start a free trial </button>
                 </div>
             </div>
 
@@ -59,7 +75,7 @@ function Header() {
             <div  className="d-xl-none d-block" onClick={()=>toggleMenu()}>
                 {/* { isMenuOPen?(<FaXmark className='icon burgerIcon'/>):(<RxHamburgerMenu className='icon '
                       />)} */}
-                    <RxHamburgerMenu  className='icon'/>
+                    <RxHamburgerMenu  className ={`icon ${isScrolled?"black-text":"white-text"}`}/>
                       
             </div>
             {/* burger button controller end */}
