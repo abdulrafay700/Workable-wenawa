@@ -14,6 +14,13 @@ h1, h2,h3, h4, h5, h6,p,a li,span{
 
 }
 
+.mb-6{
+  margin-bottom: 7rem !important;
+}
+
+.fw-600{
+  font-weight: 600 !important;
+}
 .black-text {
   color: var(--black-color) !important;
 }
@@ -302,6 +309,7 @@ margin: 5rem 0;
 .recuitbox{
   display: flex;
   justify-content: center;
+  margin: 5rem 0 !important;
   
 
 }
@@ -313,21 +321,21 @@ margin: 5rem 0;
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 1px;
-    margin-bottom: 5rem;
+   
 }
 
 
 /* card designs start*/
 .card-body{
 
-  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .card-body .card-title{
-  width: 80%;
+  /* width: 80%; */
+  padding: 16px;
   text-align: center;
 }
 .card-body .card-title p{  
@@ -341,7 +349,7 @@ margin: 5rem 0;
 }
 
 .card-body .card-title h2{
-  font-size: 2rem;
+  /* font-size: 2rem; */
   font-weight: 700;
   margin-bottom: 16px;
 }
@@ -516,11 +524,22 @@ margin: 5rem 0;
   background-repeat: no-repeat;
   height: 50px !important;
 }
+
+
+/* for large devices settings */
+
+@media only screen and (max-width: 1199px) {
+
+  .card-body .card-title {
+    width: 100%;
+  }
+}
 /* for medium devices */
 @media only screen and (max-width: 996px) {
   .home-section {
       height: auto;
   }
+
 
   .map-section {
     background: url("https://www.workable.com/static/images/home/bg-mobile.png") no-repeat;

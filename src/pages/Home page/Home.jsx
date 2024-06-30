@@ -5,12 +5,22 @@ import card3img from "../../assets/images/card3img.png"
 import card4img from "../../assets/images/card4img.png"
 import card5img from "../../assets/images/card5img.png"
 import mapImage from "../../assets/images/map.png"
+import GearIcon from "../../assets/svg/Gearsvg.jsx"
 import Carousels from "../../components/Carousels";
+import Patternicon from "../../assets/svg/patternsvg.jsx";
+import Headphsvg from "../../assets/svg/headphsvg.jsx";
+import Biomatricsvg from "../../assets/svg/biomatricsvg.jsx";
+
+
+
+
+
 
 
 function Home() {
     return (
         <>
+   
         <div className="home-wrapper">
             <section className="home-section h-md-auto">
                 <div className="container">
@@ -245,27 +255,116 @@ function Home() {
                         <h2 className="text-center hr-heading">More reasons companies around <br/> the world choose Workable </h2>
                         
                         <div className="container mt-5">
-                            <div className="row">
-                                <div className="col-md-4">
-                                    
+                            <div className="row mb-6">
+                                {/* card 1 */}
+                                <div className="col-md-3">
+                                    <div className="card-body">
+                                                    <div className="cardimg">  
+                                                    <GearIcon/>
+                                                    </div>
+                                                    <div className="card-title">
+                                                        <p className="text-center black-text fw-600 ">Workable AI</p>
+                                                    </div>
+                                                    <div className="cardContent">
+                                                        <p>Workable’s AI tools are built with the knowledge of having seen over 1.5 million hires.</p>
+                                                    </div>
+                                        </div>
                                 </div>
-                                <div className="col-md-4">
-                                <div className="card-body">
+
+                                    {/* card2 */}
+                                <div className="col-md-3">
+                                    <div className="card-body">
                                                 <div className="cardimg">  
-                                                    <img src="" alt="" /> 
+                                                    <Patternicon/> 
                                                 </div>
                                                 <div className="card-title">
-                                                    <p className="text-center">Source & Attract</p>
-                                                    <h2>Find and attract candidates</h2>
+                                                    <p className="text-center black-text fw-600 ">World-class partners</p>
                                                 </div>
                                                 <div className="cardContent">
-                                                    <p>Fill your pipeline quickly with one-click job posting to 200+ sites, AI-powered sourcing, employee referrals and more.</p>
-                                                        <a  href="#">learn more</a>
+                                                    <p>Connect with LinkedIn, Google and 70+ other apps and tools to get more done.</p>
                                                 </div>
-                                            </div>
+                                    </div>
                                 </div>
-                                <div className="col-md-4"></div>
-                                <div className="col-md-4"></div>
+
+                                    {/* card 3 */}
+                                <div className="col-md-3">
+                                <div className="card-body">
+                                                <div className="cardimg">  
+                                                   <Headphsvg/>
+                                                   
+                                                </div>
+                                                <div className="card-title">
+                                                    <p className="text-center black-text fw-600 ">Fast, global support</p>
+                                                </div>
+                                                <div className="cardContent">
+                                                    <p>Reach our award-winning support team in about 25 seconds by phone or chat.</p>
+                                                </div>
+                                    </div>
+                                </div>
+
+                                    {/* card 4 */}
+                                <div className="col-md-3">
+                                <div className="card-body">
+                                                <div className="cardimg">  
+                                                   <Biomatricsvg/>
+                                                </div>
+                                                <div className="card-title">
+                                                    <p className="text-center black-text fw-600 ">Trusted security</p>
+                                                </div>
+                                                <div className="cardContent">
+                                                    <p>Sleep soundly knowing your data is always safe and always accessible. We’re ISO-certified.</p>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* second row */}
+                            <div className="row justify-content-center mt-5 gap-5">
+                                {/* card 5 */}
+                                    <div className="col-md-3">
+                                            <div className="card-body">
+                                                            <div className="cardimg">  
+                                                            <GearIcon/>
+                                                            </div>
+                                                            <div className="card-title">
+                                                                <p className="text-center black-text fw-600 ">Anywhere recruiting</p>
+                                                            </div>
+                                                            <div className="cardContent">
+                                                                <p>Keep things moving from anywhere with our top-rated mobile hiring app.</p>
+                                                            </div>
+                                                </div>
+                                        </div>
+                                        {/* card 6 */}
+
+                                        <div className="col-md-3">
+                                            <div className="card-body">
+                                                            <div className="cardimg">  
+                                                            <GearIcon/>
+                                                            </div>
+                                                            <div className="card-title">
+                                                                <p className="text-center black-text fw-600 ">Expert advice</p>
+                                                            </div>
+                                                            <div className="cardContent">
+                                                                <p>Make the right moves with help from 1000s of hiring templates and tutorials.</p>
+                                                            </div>
+                                                </div>
+                                        </div>
+
+                                            {/* card 7 */}
+
+                                            <div className="col-md-3">
+                                                <div className="card-body">
+                                                                <div className="cardimg">  
+                                                                <GearIcon/>
+                                                                </div>
+                                                                <div className="card-title">
+                                                                    <p className="text-center black-text fw-600 ">Assisted onboarding</p>
+                                                                </div>
+                                                                <div className="cardContent">
+                                                                    <p>Get up and running in days, not months — Workable is just that easy to use.</p>
+                                                                </div>
+                                                    </div>
+                                            </div>
                             </div>
                         </div>
                         </div>

@@ -1,0 +1,288 @@
+.Smallgear {
+    background-color: red !important;
+    outline: red !important;
+    color: red !important;
+    animation: rightmove 6s linear infinite;
+}
+
+@keyframes rightmove {
+    0% {
+        transform: translate(17.65px, 20.35px) rotate(0deg) translate(-17.65px, -20.35px);
+    }
+    100% {
+        transform: translate(17.65px, 20.35px) rotate(-1turn) translate(-17.65px, -20.35px);
+    }
+}
+
+
+@keyframes leftmove{
+    0% {
+        transform: translate(40.8px, 39.35px) rotate(0deg) translate(-40.8px, -39.35px);
+    }
+    
+    100% {
+        transform: translate(40.8px, 39.35px) rotate(1turn) translate(-40.8px, -39.35px);
+    }
+}
+
+.largeGear{
+   animation: leftmove 6s linear infinite;
+}
+
+
+.dottedshows {
+    animation: integrate_a0_o__zL0Qj 3.5s linear infinite both;
+}
+
+@keyframes integrate_a0_o__zL0Qj{
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    22.8571% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    28.5714% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    37.1429% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    51.4286% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    62.8571% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    68.5714% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    85.7143% {
+        opacity: 1;
+    }
+    100% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+}
+
+
+/* for finger print */
+.fingerprint_animate1__bbM_z {
+animation: fingerprint_blue01_do__v3rM9 1.3s linear infinite both;
+}
+
+@keyframes fingerprint_blue01_do__v3rM9{
+    0% {
+        stroke-dashoffset: 1px;
+    }
+    7.6923% {
+        stroke-dashoffset: 0px;
+    }
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+.fingerprint_animate2__1YBmn {
+    animation: fingerprint_blue04_do__v9RwM 1.3s linear infinite both;
+}
+
+@keyframes  fingerprint_blue04_do__v9RwM{
+0% {
+    stroke-dashoffset: 1px;
+}
+
+53.8462% {
+    stroke-dashoffset: 1px;
+}
+61.5385% {
+    stroke-dashoffset: 0px;
+}
+100% {
+    stroke-dashoffset: 0px;
+}
+
+}
+
+.fingerprint_animate3__SwB9z {
+    animation: fingerprint_green01_do__y3QpU 1.3s linear infinite both;
+}
+
+@keyframes fingerprint_green01_do__y3QpU {
+    0% {
+        stroke-dashoffset: 49.76px;
+    }
+    23.0769% {
+        stroke-dashoffset: 0px;
+    }
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+.fingerprint_animate4__1Co5P {
+    animation: fingerprint_green02_do__BwZiT 1.3s linear infinite both;
+}
+
+@keyframes fingerprint_green02_do__BwZiT {
+0% {
+    stroke-dashoffset: 39.2px;
+}
+23.0769% {
+    stroke-dashoffset: 39.2px;
+}
+46.1538% {
+    stroke-dashoffset: 0px;
+}
+100% {
+    stroke-dashoffset: 0px;
+}
+}
+
+.fingerprint_animate6__ZfINB {
+    animation: fingerprint_green02-ex_do__W2eAB 1.3s linear infinite both;
+}
+@keyframes fingerprint_green02-ex_do__W2eAB {
+    0% {
+        stroke-dashoffset: 42.93px;
+    }
+    23.0769% {
+        stroke-dashoffset: 42.93px;
+    }
+    46.1538% {
+        stroke-dashoffset: 0px;
+    }
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+.fingerprint_animate5__UMGN2 {
+    animation: fingerprint_green01-ex_do__9N1A8 1.3s linear infinite both;
+}
+
+@keyframes fingerprint_green01-ex_do__9N1A8{
+    0% {
+        stroke-dashoffset: 48.11px;
+    }
+    23.0769% {
+        stroke-dashoffset: 0px;
+    }
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+.fingerprint_animate7__D8ipd {
+    animation: fingerprint_green03-ex_do__VOHUa 1.3s linear infinite both;
+}
+@keyframes fingerprint_green03-ex_do__VOHUa {
+0% {
+    stroke-dashoffset: 34.18px;
+}
+46.1538% {
+    stroke-dashoffset: 34.18px;
+}
+61.5385% {
+    stroke-dashoffset: 0px;
+}
+100% {
+    stroke-dashoffset: 0px;
+}
+}
+
+.fingerprint_animate8__Zxu96 {
+    animation: fingerprint_blue03_do__SeBmK 1.3s linear infinite both;
+}
+@keyframes fingerprint_blue03_do__SeBmK {
+    0% {
+        stroke-dashoffset: 56.23px;
+    }
+    23.0769% {
+        stroke-dashoffset: 56.23px;
+    }
+    53.8462% {
+        stroke-dashoffset: 0px;
+    }
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+.fingerprint_animate9__513Dm {
+    animation: fingerprint_blue02_do__kAEQO 1.3s linear infinite both;
+}
+@keyframes fingerprint_blue02_do__kAEQO{
+    0% {
+        stroke-dashoffset: 53.44px;
+    }
+    7.6923% {
+        stroke-dashoffset: 53.44px;
+    }
+    23.0769% {
+        stroke-dashoffset: 0px;
+    }
+    100% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+/* =============================== for head phone=========== */
+
+.animation_animate1__RsJl6 {
+    animation: animation_a0_o__0Yufm .8s linear infinite both;
+}
+@keyframes animation_a0_o__0Yufm{
+0% {
+    opacity: 1;
+}
+37.5% {
+    opacity: 0;
+}
+100% {
+    opacity: 0;
+}
+}
+
+.animation_animate2__V_XHZ {
+    animation: animation_a1_o__41Deo .8s linear infinite both;
+}
+@keyframes animation_a1_o__41Deo{
+0% {
+    opacity: 0;
+}
+37.5% {
+    opacity: 1;
+}
+75% {
+    opacity: 0;
+}
+100% {
+    opacity: 0;
+}
+}
+
+.animation_animate3__Mqe9K {
+    animation: animation_a2_o__YtDX0 .8s linear infinite both;
+}
+@keyframes animation_a2_o__YtDX0 {
+0% {
+    opacity: 0;
+}
+37.5% {
+    opacity: 0;
+}
+75% {
+    opacity: 1;
+}
+100% {
+    opacity: 1;
+}
+}
