@@ -10,6 +10,9 @@ import Carousels from "../../components/Carousels";
 import Patternicon from "../../assets/svg/patternsvg.jsx";
 import Headphsvg from "../../assets/svg/headphsvg.jsx";
 import Biomatricsvg from "../../assets/svg/biomatricsvg.jsx";
+import Prefooterimg from "../../assets/images/prefooter.png"
+
+
 
 
 
@@ -248,9 +251,9 @@ function Home() {
 
           
 
-                    {/* -------------more Reason section start-------------- */}
+                    {/* --------------more Reason section start-------------- */}
 
-                    <section className="more-reasons">
+                    <section className="more-reasons mb-6">
                         <div className="container">
                         <h2 className="text-center hr-heading">More reasons companies around <br/> the world choose Workable </h2>
                         
@@ -369,6 +372,30 @@ function Home() {
                         </div>
                         </div>
                     </section>
+                    
+                    {/* -------------more Reason section End-------------- */}
+
+
+                {/* ----------------------Grow withus Start------------- */}
+
+
+                <section className="contianer-fluid Grow-section mt-5">
+                    <div className="container">
+                   
+                            <div className="d-flex flex-column align-item-center col-12 align-items-center ">
+                               <h3 className="text-center hr-heading green-text">Let’s grow together</h3>
+                               <p className="text-center">Explore our full platform with a 15-day free trial.<br/>
+                               Post jobs, get candidates and onboard employees all in one place.</p>
+                               <a className="secondary-btn-1-scroll"> Start a free trial</a>
+                               <img  className= "img-fluid mt-5" src={Prefooterimg} alt="" />
+                            </div>
+                        
+                    </div>
+                </section>
+
+                  
+             
+
 
         </div>
         {/* wrapper end */}
