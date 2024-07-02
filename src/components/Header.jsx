@@ -42,7 +42,7 @@ function Header() {
         <div className='container d-flex'>
                    
                 {/* navbar */}
-                <nav className='col-8 d-flex align-items-center d-xl-flex d-none' >
+                <nav className='col-7 d-flex align-items-center d-xl-flex d-none' >
                         <div >
                             <img src={logo} alt="" />
                         </div>
