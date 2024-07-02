@@ -39,7 +39,7 @@ function Header() {
         <div className='d-xl-none d-lg-block' >
                     <img src={logo} alt="" />
             </div>
-        <div className='container d-flex'>
+        <div className='container d-flex justify-content-between'>
                    
                 {/* navbar */}
                 <nav className='col-7 d-flex align-items-center d-xl-flex d-none' >
