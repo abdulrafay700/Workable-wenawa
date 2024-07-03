@@ -189,7 +189,7 @@ function Home() {
                                         <p>Since 2012, the world’s best companies have depended on Workable to find and hire the people they depend on.</p>
                                         
                                         {/* map content first row */}
-                                        <div className="row gap-1">
+                                        <div className="row gap-1 ">
                                             <div className="col-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="52" fill="none" viewBox="0 0 50 52"><path stroke="#979AD3" stroke-miterlimit="10" stroke-width="2" d="M35.2 6.6C30.9 3.1 25.4 1 19.5 1v8M19.5 30.4v20.3c13.7 0 24.8-11.2 24.8-24.8 0-3.8-.9-7.4-2.4-10.7"></path><path stroke="#979AD3" stroke-miterlimit="10" stroke-width="2" d="M44.7 2.5h-7.5l-3.8 6.4 3.7 6.6 7.5.1 3.9-6.5-3.8-6.6zM1 17.5c.2-1.4.6-2.7 1.2-4C4.1 9.2 8 6 12.6 4.9"></path><path stroke="#02BFD3" stroke-miterlimit="10" stroke-width="2" d="M16.1 31.1c6.24 0 11.3-5.06 11.3-11.3 0-6.24-5.06-11.3-11.3-11.3-6.24 0-11.3 5.06-11.3 11.3 0 6.24 5.06 11.3 11.3 11.3z"></path><path stroke="#979AD3" stroke-miterlimit="10" stroke-width="2" d="M12 38.5H2.5V48H12v-9.5z"></path></svg>
                                             </div>
