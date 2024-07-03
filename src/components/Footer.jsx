@@ -90,9 +90,9 @@ const Footer =()=>{
                 
                 {/* footer addresss and social address */}
 
-                <div className="container socail-footer-address">
+                <div className="container socail-footer-address pb-2">
                     <hr  className="text-white"/>
-                    <div className="row align-items-center ">
+                    <div className="row align-items-center  ">
                         <div className="col-12 col-lg-4  text-white d-flex flex-column align-items-center align-items-lg-start ">
                             <p>Americas: +1 857 990 9675</p>
                             <p>Europe & Rest of World: +44 203 826 8149</p>
@@ -104,7 +104,7 @@ const Footer =()=>{
                             <a href="#">< FaXTwitter /></a>
                             <a href="#">< AiFillInstagram  /></a>
                         </div>
-                        <div className="mt-5 mt-md-5 mt-sm-5 mt-lg-0 col-xs-12 col-lg-4 d-flex  justify-content-center justify-content-lg-start">
+                        <div className="mt-5  mt-sm-5 mt-lg-0 col-xs-12 col-lg-4 d-flex  justify-content-center justify-content-lg-start">
 
                             <div className="row">
                                 <div className="col-6">
